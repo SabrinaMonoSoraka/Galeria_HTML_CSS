@@ -1,6 +1,9 @@
 body{
     padding: 0;
     margin: 0;
+    background-image: url(../imagens/fundo.jpg);
+    background-position: bottom auto;
+    background-size: cover;
   
 }
 
@@ -11,6 +14,8 @@ body{
     opacity: 0;
     
 }
+
+
 
 main {
     margin: auto;
@@ -121,7 +126,7 @@ main {
 }
 
 .lista {
-    overflow: hidden;
+    overflow: auto;
     width: 100%;
    
 }
@@ -131,25 +136,27 @@ main {
 .lista li img {
     width: 100%;
     height: 100%;
-  
-      border-radius: 10px;
+    border:solid 5px #fff;
+    border-radius: 10px;
     
     
 }
 
 .lista li {
-    width: 500px;
+    width: 30%;
     height: 300px;
     display: inline-block;
-   
+    
     
 }
 
 .lista li:hover {
     
-    width: 510px;
+    width: 31%;
     height: 310px;
-   
+    transition-property: width,height;
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(.27,.19,.79,.83)
     
 }
 
